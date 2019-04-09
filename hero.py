@@ -1,3 +1,3 @@
 import pygame
 
-class Hero()
+#class Hero()
