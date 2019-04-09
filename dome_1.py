@@ -106,9 +106,9 @@ class GamePlay(object):
         keys_press = pygame.key.get_pressed()
         # 键盘操作战机左右移动
         if keys_press[pygame.K_RIGHT]:  # 按下右键，
-            self.hero.speed = 2
+            self.hero.speed = 4
         elif keys_press[pygame.K_LEFT]:  # 按下左键
-            self.hero.speed = -2
+            self.hero.speed = -4
         else:
             self.hero.speed = 0
 

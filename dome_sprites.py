@@ -64,7 +64,7 @@ class CreatHero(PlaneSprites):
 
     # 发射子弹
     def fire(self):
-        for i in (0, 1, 2):
+        for i in (0, 1):
             bullt = CreatBullet()
             bullt.rect.bottom = self.rect.y-i*20
             bullt.rect.centerx = self.rect.centerx
@@ -74,7 +74,7 @@ class CreatHero(PlaneSprites):
 # 创建子弹精灵类
 class CreatBullet(PlaneSprites):
     def __init__(self):
-        super().__init__('bullet1.png', speed=-2)
+        super().__init__('bullet.png', speed=-2)
 
     def update(self):
         super().update()
