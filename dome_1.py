@@ -93,6 +93,7 @@ class GamePlay(object):
 
     # 事件监听
     def __event(self):
+        x, y = pygame.mouse.get_pos()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:  # 当监听事件为退出事件，则退出游戏
                 print('游戏退出....')
