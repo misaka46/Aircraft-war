@@ -74,7 +74,7 @@ class CreatHero(PlaneSprites):
 # 创建子弹精灵类
 class CreatBullet(PlaneSprites):
     def __init__(self):
-        super().__init__('bullet.png', speed=-2)
+        super().__init__('bullet1.png', speed=-2)
 
     def update(self):
         super().update()
